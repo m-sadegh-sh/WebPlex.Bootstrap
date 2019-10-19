@@ -1,0 +1,14 @@
+﻿@using WebPlex.Bootstrap.Components
+@{
+	ViewBag.Title = "Progressbar";
+	Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
+}
+
+<h2>Progressbar</h2>
+
+@(Html.Bootstrap().
+	   Progress().
+	   Id("my-progressbar").
+	   Striped(true).
+	   Bars(bar1 => bar1.Type(BarTypes.Warning).Value(35),
+			bar2 => bar2.Type(BarTypes.Danger).Value(54)))

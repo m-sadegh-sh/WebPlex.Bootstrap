@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="WebPlex.Bootstrap.MvcTestApplication.MvcApplication" Language="C#" %>

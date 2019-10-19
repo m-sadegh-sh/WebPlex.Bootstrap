@@ -1,0 +1,15 @@
+﻿@using WebPlex.Bootstrap.Components
+@{
+	ViewBag.Title = "Alert";
+	Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
+}
+
+<h2>Alert</h2>
+
+@(Html.Bootstrap().
+       Alert().
+       Blocked(true).
+       Type(AlertTypes.Warning).
+       RenderCloseButton(true).
+       Title("Test Alert").
+       Message("This is a test Alert."))
